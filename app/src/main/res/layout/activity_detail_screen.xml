@@ -134,6 +134,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -145,7 +146,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
                         android:text="Save"
                         android:textColor="#8480E3" />
 
@@ -158,7 +159,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
                         android:text="Like"
                         android:textColor="#8480E3" />
 
@@ -171,7 +172,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="5dp"
+                        android:layout_marginLeft="5dp"
                         android:text="Comment"
                         android:textColor="#f47f0a" />
 
@@ -183,7 +184,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#e7daff">
+    android:background="#fbf0ff">
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -209,7 +210,7 @@
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
                         android:layout_marginTop="9dp"
-                        android:layout_marginEnd="67dp"
+                        android:layout_marginEnd="65dp"
                         android:background="@drawable/custom_background1"
                         android:padding="3dp"
                         android:textSize="10dp"
@@ -417,7 +418,7 @@
                         android:visibility="visible"
                         android:id="@+id/profile_pic"
                         android:layout_margin="10dp"
-                        android:src="@drawable/pic"/>
+                        android:src="@drawable/mypic"/>
                     <EditText
                         android:id="@+id/editText"
                         android:layout_width="270dp"
@@ -439,7 +440,7 @@
                         android:id="@+id/send"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
                         android:src="@drawable/img4"/>
 
