@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout1"
     android:background="@color/purple_700"
     tools:context=".MainActivity">
 
@@ -203,7 +204,7 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round" />
+                            android:src="@drawable/women2" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -263,7 +264,7 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round" />
+                            android:src="@drawable/men1" />
 
                         <TextView
                             android:id="@+id/textView6"
@@ -271,7 +272,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="70dp"
                             android:layout_marginTop="21dp"
-                            android:text="Rishab. 3 days ago"
+                            android:text="John. 2 days ago"
                             android:textColor="@color/purple_200" />
 
                         <Button
@@ -392,7 +393,7 @@
                             android:layout_width="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round"
+                            android:src="@drawable/women1"
                             android:layout_height="50dp"/>
 
                         <ImageView
@@ -410,7 +411,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="70dp"
                             android:layout_marginTop="21dp"
-                            android:text="mani. 3 days ago"
+                            android:text="Georgia. 1 day ago"
                             android:textColor="@color/purple_200"/>
 
                         <TextView
@@ -422,7 +423,7 @@
                             android:layout_marginStart="80dp"
                             android:layout_marginTop="47dp"
                             android:textColor="@color/purple_200"
-                            android:text="Maharastra" />
+                            android:text="Dubai" />
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -452,7 +453,7 @@
                             android:layout_width="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round"
+                            android:src="@drawable/men3"
                             android:layout_height="50dp"/>
 
                         <TextView
@@ -617,7 +618,7 @@
                             android:layout_height="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round" />
+                            android:src="@drawable/men2" />
 
                         <TextView
                             android:id="@+id/textView13"
@@ -625,7 +626,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="70dp"
                             android:layout_marginTop="21dp"
-                            android:text="Rishab. 3 days ago"
+                            android:text="Vivek. 3 days ago"
                             android:textColor="@color/purple_200" />
 
                         <TextView
@@ -766,7 +767,7 @@
                             android:layout_width="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
-                            android:src="@mipmap/ic_launcher_round"
+                            android:src="@drawable/girl1"
                             android:layout_height="50dp"/>
 
                         <TextView

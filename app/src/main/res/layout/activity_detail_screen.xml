@@ -71,7 +71,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/men2" />
 
                     <TextView
                         android:id="@+id/textView13"
@@ -194,7 +194,7 @@
                         android:layout_height="50dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="20dp"
-                        android:src="@mipmap/ic_launcher_round" />
+                        android:src="@drawable/women2" />
 
                     <TextView
                         android:id="@+id/textView1"
@@ -273,7 +273,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:src="@mipmap/ic_launcher_round" />
+            android:src="@drawable/men1" />
 
         <TextView
             android:id="@+id/textView3"
@@ -340,7 +340,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:src="@mipmap/ic_launcher_round" />
+            android:src="@drawable/women1" />
 
         <TextView
             android:id="@+id/textView5"
@@ -348,7 +348,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
             android:layout_marginTop="21dp"
-            android:text="Vikram. 2 days ago"
+            android:text="Georgia. 4 days ago"
             android:textColor="@color/purple_200" />
 
         <TextView

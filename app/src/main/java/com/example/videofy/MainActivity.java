@@ -57,6 +57,7 @@ ActivityMainBinding binding;
        PopupWindow popupWindow=new PopupWindow(viewPopupWindow,1000,600,true);
 
         popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
         popupWindow.showAtLocation(view, Gravity.TOP,0,10);
        // viewPopupWindow.setOnClickListener(new View.OnClickListener() {
          //   @Override
