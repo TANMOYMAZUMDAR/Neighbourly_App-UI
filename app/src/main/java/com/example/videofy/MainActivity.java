@@ -11,13 +11,18 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.Window;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import com.example.videofy.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 ActivityMainBinding binding;
+    boolean beenThereFromTop = false;
+    boolean beenThereFromBottom = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +42,102 @@ ActivityMainBinding binding;
                 startnewActivity(v);
             }
         });
+
+
+        binding.scrollview.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+
+            @Override
+            public void onScrollChanged() {
+
+                ImageView whereToStop = (ImageView) findViewById(R.id.detail_image);
+                final int y = whereToStop.getBottom();
+
+                int scrollY = binding.scrollview.getScrollY();
+
+// manage scrolling from top to bottom
+
+                if (scrollY > y) {
+                    if (!beenThereFromTop) {
+                        beenThereFromTop = true;
+                        binding.scrollview.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                binding.scrollview.smoothScrollTo(0, y);
+                            }
+                        });
+                    }
+                }
+                if (scrollY < y && beenThereFromTop) {
+                    beenThereFromTop = false;
+                }
+
+// manage scrolling from bottom to top
+/*
+                if (scrollY < y) {
+                    if (!beenThereFromBottom) {
+                        beenThereFromBottom = true;
+                        binding.scrollview.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                binding.scrollview.smoothScrollTo(0, y);
+                            }
+                        });
+                    }
+                }
+                if (scrollY > y && beenThereFromBottom) {
+                    beenThereFromBottom = false;
+                }
+            */
+            }
+        });
+/*
+        binding.scrollview.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+
+            @Override
+            public void onScrollChanged() {
+
+                ImageView whereToStop = (ImageView) findViewById(R.id.rose_img);
+                final int y = whereToStop.getBottom();
+
+                int scrollY = binding.scrollview.getScrollY();
+
+// manage scrolling from top to bottom
+
+                if (scrollY > y) {
+                    if (!beenThereFromTop) {
+                        beenThereFromTop = true;
+                        binding.scrollview.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                binding.scrollview.smoothScrollTo(0, y);
+                            }
+                        });
+                    }
+                }
+                if (scrollY < y && beenThereFromTop) {
+                    beenThereFromTop = false;
+                }
+
+// manage scrolling from bottom to top
+
+                if (scrollY < y) {
+                    if (!beenThereFromBottom) {
+                        beenThereFromBottom = true;
+                        binding.scrollview.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                binding.scrollview.smoothScrollTo(0, y);
+                            }
+                        });
+                    }
+                }
+                if (scrollY > y && beenThereFromBottom) {
+                    beenThereFromBottom = false;
+                }
+            }
+
+        });
+        */
 
     }
 

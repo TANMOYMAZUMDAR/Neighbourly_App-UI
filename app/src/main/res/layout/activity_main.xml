@@ -93,6 +93,7 @@
 
     <androidx.core.widget.NestedScrollView
         android:layout_below="@id/RelativeLayout"
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp">
@@ -594,6 +595,7 @@
 
                         <ImageView
                             android:layout_width="match_parent"
+                            android:id="@+id/detail_image"
                             android:layout_height="wrap_content"
                             android:scaleType="centerCrop"
                             android:src="@drawable/pic" />
@@ -748,6 +750,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/rose_img"
                         android:scaleType="centerCrop"
                         android:src="@drawable/o"/>
                     <ImageView
